@@ -1,0 +1,502 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/*Home page css*/
+#background {
+  background-image: linear-gradient(
+      115deg,
+      rgba(43, 41, 20, 0.8),
+      rgba(231, 180, 10, 0.1)
+    ),
+    url(./code1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+#nav_ul {
+  color: white;
+  position: absolute;
+  bottom: 85%;
+  right: 4%;
+  list-style: none;
+}
+
+#nav_ul a {
+  text-decoration: none;
+  color: white;
+}
+#nav_ul a:hover {
+  color: aqua;
+}
+#nav_ul ul {
+  float: right;
+}
+
+#nav_ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-weight: bolder;
+  font-family: "Josefin Sans, Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 17px;
+}
+#menu {
+  display: none;
+}
+#scroll {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+}
+
+#scroll span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid rgb(88, 88, 63);
+  border-right: 2px solid rgb(102, 101, 59);
+  transform: rotate(45deg);
+  animation: animate 2s infinite;
+}
+
+#scroll span:nth-child(2) {
+  animation-delay: -0.2s;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+
+#scroll span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+/*About page css*/
+#about {
+  width: 100vw;
+  background-color: rgb(12, 12, 12);
+}
+#about_background {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+.about {
+  width: 60%;
+  border: 1px solid aqua;
+  margin: auto;
+  padding: 25px;
+}
+
+#about_experience {
+  color: aqua;
+  text-align: center;
+}
+#about_experience_p {
+  color: white;
+  font-size: 22px;
+}
+
+#about_ul {
+  list-style: none;
+  color: white;
+  border-radius: 50%;
+}
+/*Portfolio page css*/
+#portfolio {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 0, 0.1);
+  margin: auto;
+}
+#portfolio_bar {
+  background-color: yellowgreen;
+  height: 7px;
+}
+
+#_projects {
+  color: aqua;
+  display: block;
+  text-align: center;
+  margin-bottom: 47px;
+  margin-top: 47px;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 27%;
+  height: 200px;
+  margin: 7px;
+  text-align: center;
+}
+.project img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#portfolio_background {
+  background-color: black;
+}
+
+#up {
+  height: 20px;
+  width: 20px;
+  border-right: 2px solid aqua;
+  border-bottom: 2px solid aqua;
+  transform: rotate(225deg);
+  float: right;
+  margin-top: -50px;
+  margin-right: 20px;
+}
+
+/* Contact Page css*/
+#contact {
+  width: 100%;
+  height: 100vh;
+}
+#contact_background {
+  color: white;
+  width: 100%;
+
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+/*Form page css*/
+
+#contact_background label {
+  display: inline-block;
+  width: 140px;
+}
+#back_angle {
+  height: 20px;
+  width: 20px;
+  border-bottom: 2px solid aqua;
+  border-right: 2px solid aqua;
+  display: inline-block;
+  transform: rotate(135deg);
+  margin: 40px 0 0 30px;
+}
+#back {
+  display: inline;
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+}
+#back:hover {
+  color: aqua;
+}
+#message {
+  text-align: justify;
+  width: 570px;
+  margin: auto;
+  position: relative;
+  top: 70px;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+#send_me_a_message {
+  color: aqua;
+  font-size: 35px;
+  font-weight: bold;
+}
+input {
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 418px;
+}
+
+#submit {
+  background-color: aqua;
+  width: 150px;
+  border: none;
+  display: block;
+  margin: auto;
+  position: relative;
+  left: 60px;
+  top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#label_for_message {
+  position: relative;
+  bottom: 50px;
+}
+.star {
+  color: red;
+  position: relative;
+  top: 5px;
+  left: 3px;
+}
+#submit:hover {
+  padding: 15px;
+  cursor: pointer;
+}
+
+#form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#success_message {
+  position: relative;
+  bottom: 610px;
+  background-color: aqua;
+  color: black;
+  width: 400px;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  visibility: hidden;
+}
+
+/*Responsive design*/
+
+@media (max-width: 800px) {
+  #scroll {
+    top: 85%;
+    height: 70px;
+  }
+  .project {
+    width: 30%;
+    height: 200px;
+  }
+  .about {
+    width: 80%;
+    border: 1px solid aqua;
+  }
+  #projects {
+    position: relative;
+    top: 90px;
+  }
+
+  #about_experience_p {
+    font-size: 20px;
+  }
+
+  #_projects {
+    margin-bottom: -20px;
+    margin-top: 40px;
+  }
+
+  #scroll {
+    top: 85%;
+  }
+
+  input {
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 300px;
+  }
+
+  #message {
+    text-align: justify;
+    width: 450px;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    font-size: 18px;
+    margin-bottom: 110px;
+  }
+
+  #success_message {
+    position: relative;
+    bottom: 610px;
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .project {
+    width: 40%;
+  }
+
+  .project {
+    height: 120px;
+  }
+  #projects {
+    position: relative;
+    top: 80px;
+  }
+  #about_experience_p {
+    color: white;
+    font-size: 16px;
+  }
+
+  #_projects {
+    font-size: 25px;
+    margin-bottom: -15px;
+    margin-top: 60px;
+  }
+
+  .about {
+    width: 70%;
+    border: 1px solid aqua;
+    margin: auto;
+    text-align: justify;
+    padding: 15px;
+  }
+  #up {
+    height: 20px;
+    width: 20px;
+    border-right: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+    transform: rotate(225deg);
+  }
+
+  #about {
+    height: 100vh;
+    width: 100vw;
+  }
+  #background {
+    height: 100vh;
+    width: 100vw;
+  }
+  #nav_ul {
+    color: white;
+    position: absolute;
+    bottom: 75%;
+    right: 60px;
+    list-style: none;
+  }
+  #nav_ul li {
+    display: inline-block;
+    margin-bottom: -60px;
+    font-size: 20px;
+    margin: auto;
+  }
+  #menu {
+    display: block;
+    height: 25px;
+    width: 50px;
+    border-bottom: 4px solid white;
+    border-top: 4px solid white;
+    position: relative;
+    top: 25px;
+    left: 15px;
+  }
+  hr {
+    border: 2px solid white;
+    margin-top: 23%;
+  }
+
+  #menu:hover {
+    cursor: pointer;
+  }
+
+  #message {
+    text-align: justify;
+    width: 340px;
+    margin: auto;
+    position: relative;
+    top: 35px;
+    font-size: 16px;
+    margin-bottom: 70px;
+  }
+
+  input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 320px;
+  }
+  #contact_background {
+    color: white;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(255, 255, 0, 0.1);
+  }
+  #contact_background label {
+    display: block;
+    width: 120px;
+  }
+
+  #label_for_message {
+    position: relative;
+    bottom: 0px;
+  }
+
+  #submit {
+    position: relative;
+    left: 20px;
+    top: 20px;
+  }
+
+  #success_message {
+    position: relative;
+    bottom: 710px;
+
+    width: 295px;
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .project {
+    height: 100px;
+  }
+  #projects {
+    position: relative;
+    top: 50px;
+  }
+
+  #background {
+    height: 600px;
+    width: 100vw;
+  }
+
+  #nav_ul {
+    position: absolute;
+    bottom: 65%;
+    right: 20px;
+  }
+
+  #nav_ul li {
+    padding: 7.5px;
+  }
+
+  #scroll {
+    width: 40px;
+    height: 50px;
+    position: relative;
+    top: 85%;
+    margin: auto;
+  }
+}

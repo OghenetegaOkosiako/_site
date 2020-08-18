@@ -1,0 +1,12 @@
+#nav {
+  height: 70px;
+  width: 100vw;
+  background: linear-gradient(
+    115deg,
+    rgba(10, 10, 7, 0.9),
+    rgba(70, 54, 4, 0.5)
+  );
+  border: none;
+  color: white;
+  text-align: center;
+}
